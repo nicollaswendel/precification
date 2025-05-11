@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Preço</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/calculadora.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>Precificação - Neustart</h1>
+    </header>
+
+    <main>
+
+        <h5>Os valores só serão exibidos ao preencher os campos obrigatórios e apertar o botão "Calcular".</h5>
+
+        <table id="table"> <!-- Criando a tabela -->
+            <tr> <!-- Criando a linha do cabeçalho -->
+                <th>Parâmetros</th> <!-- Criando a célula do cabeçalho -->
+                <th>Valores</th>
+            </tr>
+            <tr> <!-- Criando as outras linhs -->
+                <td>Custo (R$):</td> <!-- Criando as células de registros -->
+                <td><input type="text" class="input" id="custo" placeholder="Digite o custo" required></td>
+            </tr>
+            <tr>
+                <td>Margem de lucro (%):</td>
+                <td><input type="text" class="input" id="margem" placeholder="Digite a margem" required></td>
+            </tr>
+            <tr>
+                <td>Preço sem imposto:</td>
+                <td id="precoSemImposto"></td>
+            </tr>
+            <tr>
+                <td>Imposto pago (%):</td>
+                <td><input type="text" class="input" id="imposto" placeholder="Digite o imposto" required></td>
+            </tr>
+            <tr>
+                <td class="no-wrap">Venda com imposto (R$):ㅤ</td>
+                <td id="vendaComImposto"></td>
+            </tr>
+            <tr>
+                <td>Imposto (R$):</td>
+                <td id="impostoReais"></td>
+            </tr>
+            <tr>
+                <td><br></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Margem de lucro (R$):</td>
+                <td id="margemReais"></td>
+            </tr>
+            <tr>
+                <td>Margem (%):</td>
+                <td id="margemPercentual"></td>
+            </tr>
+            <tr>
+                <td>Imposto (%):</td>
+                <td id="impostoPercentual"></td>
+            </tr>
+        </table>
+        
+        <div class="button">
+            <button id="calcular">Calcular</button>
+            <button id="limpar">Limpar</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2>
+            <a href="https://github.com/nicollaswendel">&copy; Nícollas Wendel</a>
+        <h2>
+    </footer>
+
+</body>
+</html>
